@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-DYNAMIC=false
+# ---------------------------------------------------------------------------------------- #
+# Description                                                                              #
+# ---------------------------------------------------------------------------------------- #
+# A simply script to run as a pre-commit hook to block commits to the default main branch. #
+# ---------------------------------------------------------------------------------------- #
 
-if [[ $DYNAMIC = true ]]; then
+ABD=false
+
+if [[ $ABD = true ]]; then
     DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD' | cut -d':' -f2 | sed -e 's/^ *//g' -e 's/ *$//g')
 else
     DEFAULT_BRANCH='master'
 fi
-
-# ---------------------------------------------------------------------------------------- #
-# Description                                                                              #
-# ---------------------------------------------------------------------------------------- #
-#                                                                                          #
-# ---------------------------------------------------------------------------------------- #
 
 if branch=$(git rev-parse --abbrev-ref HEAD 2>&1); then
     if [[ "${branch}" = "${DEFAULT_BRANCH}" ]]; then
