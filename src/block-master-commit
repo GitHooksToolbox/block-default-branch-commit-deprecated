@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+DYNAMIC=false
+
+if [[ $DYNAMIC = true ]]; then
+    DEFAULT_BRANCH=$(git remote show origin | grep 'HEAD' | cut -d':' -f2 | sed -e 's/^ *//g' -e 's/ *$//g')
+else
+    DEFAULT_BRANCH='master'
+fi
+
 # ---------------------------------------------------------------------------------------- #
 # Description                                                                              #
 # ---------------------------------------------------------------------------------------- #
@@ -7,8 +15,8 @@
 # ---------------------------------------------------------------------------------------- #
 
 if branch=$(git rev-parse --abbrev-ref HEAD 2>&1); then
-    if [[ "${branch}" = "master" ]]; then
-        echo "You cannot commit to the master branch - Aborting!"
+    if [[ "${branch}" = "${DEFAULT_BRANCH}" ]]; then
+        echo "You cannot commit to the ${DEFAULT_BRANCH} branch - Aborting!"
         exit 1
     fi
 fi
