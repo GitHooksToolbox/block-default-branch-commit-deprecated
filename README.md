@@ -35,13 +35,13 @@
 	</a>
 </p>
 
-> This project was formally called ```block-master-branch``` but has been renamed to reflect the more dynamic nature of the solution.
+> This project was formally called `block-master-branch` but has been renamed to reflect the more dynamic nature of the solution.
 
 ## Overview
 
-No matter which style of git workflow you use, it is generally (but not by everyone) agreed that committing directly into the ```default branch``` is a bad idea.
+No matter which style of git workflow you use, it is generally (but not by everyone) agreed that committing directly into the `default branch` is a bad idea.
 
-> We use the term ```default branch``` to mean any branch you have configured as your default, this is often ```master``` or ```main``` but can be configured on a repo by repo basis. 
+> We use the term `default branch` to mean any branch you have configured as your default, this is often `master` or `main` but can be configured on a repo by repo basis. 
 
 Some of the reasons for this include (and there are many many more):
 
@@ -49,7 +49,7 @@ Some of the reasons for this include (and there are many many more):
 * If another developer starts work for a new feature from the default branch, they start with a potentially broken state. This slows down development.
 * Different features/bug-fixes are not isolated, so that the complexity of all ongoing development tasks is combined in one branch. This increases the amount of communication necessary between all developers.
 * You cannot do pull requests which are very good mechanism for code reviews.
-* You cannot squash commits/change git history in general, as other developers might already have pulled the ```default branch``` in the meantime.
+* You cannot squash commits/change git history in general, as other developers might already have pulled the `default branch` in the meantime.
 
 ## What can we do ?
 
@@ -101,7 +101,7 @@ When it comes to local branch protection there are 2 main ways to approach the p
 
 ### Blocking the commit
 
-This solution implements a complete block when the user attempts to commit changes to the local ```default branch```.
+This solution implements a complete block when the user attempts to commit changes to the local `default branch`.
 
 #### Example
 
@@ -136,10 +136,10 @@ git rev-parse --show-toplevel
 
 ### Changing the defaults
 
-By default this script uses ```master``` as the default branch name, but this can be changed in one of 2 ways.
+By default this script uses `master` as the default branch name, but this can be changed in one of 2 ways.
 
-1. Change the name in the global variable [script](src/block-default-commit#14).
-2. Turn on automatic branch identification. [script](src/block-default-commit#9).
+1. Change the name in the global variable [script](https://github.com/GitToolbox/block-default-branch-commit/blob/master/src/block-default-branch-commit#L14).
+2. Turn on automatic branch identification. [script](https://github.com/GitToolbox/block-default-branch-commit/blob/master/src/block-default-branch-commit#L9).
 
 > Automatic branch identification does result in a short pause while it identifies the default branch from the remote end.
 

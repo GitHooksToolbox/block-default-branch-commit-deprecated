@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/GitToolbox/block-default-branch-commit/compare/v0.1.1...HEAD)
 
-- Fix a couple of missing master branch -> default branch changes in the README [`[head]`](https://github.com/GitToolbox/block-default-branch-commit/commit/)
+- Fix incorrect link to script in README [`[head]`](https://github.com/GitToolbox/block-default-branch-commit/commit/)
+
+- Fix a couple of missing master branch -> default branch changes in the README [`[c97003f]`](https://github.com/GitToolbox/block-default-branch-commit/commit/c97003f3f8304830828baa01aadc2fec37871c1d)
 
 ### [v0.1.0](https://github.com/GitToolbox/block-default-branch-commit/releases/v0.1.0)
 
