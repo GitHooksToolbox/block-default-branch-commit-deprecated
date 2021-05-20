@@ -49,7 +49,7 @@ Some of the reasons for this include (and there are many many more):
 * If another developer starts work for a new feature from the default branch, they start with a potentially broken state. This slows down development.
 * Different features/bug-fixes are not isolated, so that the complexity of all ongoing development tasks is combined in one branch. This increases the amount of communication necessary between all developers.
 * You cannot do pull requests which are very good mechanism for code reviews.
-* You cannot squash commits/change git history in general, as other developers might already have pulled the master branch in the meantime.
+* You cannot squash commits/change git history in general, as other developers might already have pulled the ```default branch``` in the meantime.
 
 ## What can we do ?
 
@@ -101,7 +101,7 @@ When it comes to local branch protection there are 2 main ways to approach the p
 
 ### Blocking the commit
 
-This solution implements a complete block when the user attempts to commit changes to the local master branch.
+This solution implements a complete block when the user attempts to commit changes to the local ```default branch```.
 
 #### Example
 
