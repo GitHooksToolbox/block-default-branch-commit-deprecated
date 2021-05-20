@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/GitToolbox/block-default-branch-commit/compare/v0.1.1...HEAD)
 
-- Fix incorrect link to script in README [`[head]`](https://github.com/GitToolbox/block-default-branch-commit/commit/)
+- Fix travis -> slack integration [`[head]`](https://github.com/GitToolbox/block-default-branch-commit/commit/)
+
+- Fix incorrect link to script in README [`[7cf2756]`](https://github.com/GitToolbox/block-default-branch-commit/commit/7cf2756b9291cf7445600712b4e86a2fe20bc2ff)
 
 - Fix a couple of missing master branch -> default branch changes in the README [`[c97003f]`](https://github.com/GitToolbox/block-default-branch-commit/commit/c97003f3f8304830828baa01aadc2fec37871c1d)
 
