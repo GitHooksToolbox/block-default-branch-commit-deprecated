@@ -35,11 +35,13 @@
 	</a>
 </p>
 
+> This project was formally called ```block-master-branch``` but has been renamed to reflect the more dynamic nature of the solution.
+
 ## Overview
 
-No matter which style of git workflow you use, it is generally (but not by everyone) agreed that committing directly into the default branch is a bad idea.
+No matter which style of git workflow you use, it is generally (but not by everyone) agreed that committing directly into the ```default branch``` is a bad idea.
 
-> We use the term 'default branch' to mean any branch you have configured as your default, this is often 'master' or 'main' but can be configured on a repo by repo basis. 
+> We use the term ```default branch``` to mean any branch you have configured as your default, this is often ```master``` or ```main``` but can be configured on a repo by repo basis. 
 
 Some of the reasons for this include (and there are many many more):
 
